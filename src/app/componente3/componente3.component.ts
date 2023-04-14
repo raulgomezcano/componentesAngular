@@ -6,10 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./componente3.component.css']
 })
 export class Componente3Component {
-  
+  frase1 : string = "hola mundo"
+  frase2 : string = 'hola'
+  frase3 : string = `${this.frase1}
+  ${this.frase2}
+  hola3`
+  ngOnInit(){
+    console.log(this.frase1);
+    console.log(this.frase2);
+    console.log(this.frase3);
+  }
 }
-let a=10;
-console.log(a);
-
-let frase = "El console.log funciona";
-console.log(frase);
